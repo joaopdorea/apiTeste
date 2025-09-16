@@ -15,4 +15,4 @@ RUN poetry config virtualenvs.create false \
 EXPOSE 10000
 
 # Inicia a API com uvicorn
-ENTRYPOINT ["poetry", "run", "uvicorn", "app:app", "--host", "0.0.0.0", "--port", "10000"]
+ENTRYPOINT ["poetry", "run", "uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "10000"]
